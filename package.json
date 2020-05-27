@@ -3,9 +3,9 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon index.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
