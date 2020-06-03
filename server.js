@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const knex = require('knex');
 const passwordHash = require('password-hash');
 
@@ -18,10 +17,6 @@ const db = knex({
   });
 
 const app = express();
-
-app.use(cors({
-  credentials: true,
-}));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => { res.send("it's working") })
